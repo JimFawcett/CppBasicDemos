@@ -1,0 +1,32 @@
+
+-------------------------------------------------------
+ demonstrating member objects, pointers and references 
+-------------------------------------------------------
+
+  y1 object member: 10
+  x1 object members:
+    Int(): 20
+    Str(): this is a string
+    Ref(): 10
+
+  y2 object member: 15
+  x2 object members:
+    Int(): 30
+    Str(): C:\SU\CSE687\PPT\S97\DEMINIT.EXE
+    Ref(): 15
+
+  after assignment, x1 = x2:
+
+  y1 object member: 15
+  x1 object members:
+    Int(): 30
+    Str(): C:\SU\CSE687\PPT\S97\DEMINIT.EXE
+    Ref(): 15
+
+  allocation #1
+  allocation #2
+  allocation #3
+  allocation #4
+  allocation #5
+  allocation #6
+  memory alloc failure

@@ -1,0 +1,42 @@
+
+1st executable statement of main
+  base void constructor called
+
+2nd executable statement of main
+  base void constructor called
+
+3rd executable statement of main
+  base::fun1(base &b) called
+
+4th executable statement of main
+  base::fun1(base &b) called
+
+5th executable statement of main
+  base void constructor called
+  derived void constructor called
+
+6th executable statement of main
+  derived::fun1(base &b) called
+
+7th executable statement of main
+  derived::fun1(base &b) called
+
+8th executable statement of main
+
+9th executable statement of main
+  derived::fun1(base &b) called
+
+10th executable statement of main
+  derived::fun1(base &b) called
+
+11th executable statement of main
+  derived::fun2(derived &d) called
+
+12th executable statement of main
+  derived::fun2(derived &d) called
+
+no more executable statement of main
+  derived destructor called
+  base destructor called
+  base destructor called
+  base destructor called

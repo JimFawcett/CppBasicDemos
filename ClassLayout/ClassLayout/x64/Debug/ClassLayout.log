@@ -1,0 +1,77 @@
+﻿  Layout.cpp
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4311: 'reinterpret_cast': pointer truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Base
+          ]
+  c:\su\cse687\code\classlayout\classlayout\layout.cpp(136): note: see reference to function template instantiation 'void showStatistics<Base>(T *)' being compiled
+          with
+          [
+              T=Base
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4302: 'reinterpret_cast': truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Base
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4311: 'reinterpret_cast': pointer truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Composed
+          ]
+  c:\su\cse687\code\classlayout\classlayout\layout.cpp(156): note: see reference to function template instantiation 'void showStatistics<Composed>(T *)' being compiled
+          with
+          [
+              T=Composed
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4302: 'reinterpret_cast': truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Composed
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4311: 'reinterpret_cast': pointer truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Derived
+          ]
+  c:\su\cse687\code\classlayout\classlayout\layout.cpp(177): note: see reference to function template instantiation 'void showStatistics<Derived>(T *)' being compiled
+          with
+          [
+              T=Derived
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4302: 'reinterpret_cast': truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Derived
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4311: 'reinterpret_cast': pointer truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Global_IO
+          ]
+  c:\su\cse687\code\classlayout\classlayout\layout.cpp(203): note: see reference to function template instantiation 'void showStatistics<Global_IO>(T *)' being compiled
+          with
+          [
+              T=Global_IO
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4302: 'reinterpret_cast': truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=Global_IO
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4311: 'reinterpret_cast': pointer truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=inStack
+          ]
+  c:\su\cse687\code\classlayout\classlayout\layout.cpp(207): note: see reference to function template instantiation 'void showStatistics<inStack>(T *)' being compiled
+          with
+          [
+              T=inStack
+          ]
+c:\su\cse687\code\classlayout\classlayout\layout.cpp(68): warning C4302: 'reinterpret_cast': truncation from 'T *' to 'unsigned int'
+          with
+          [
+              T=inStack
+          ]
+  ClassLayout.vcxproj -> C:\su\CSE687\code\ClassLayout\x64\Debug\ClassLayout.exe

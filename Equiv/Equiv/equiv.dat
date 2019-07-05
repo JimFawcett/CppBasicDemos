@@ -1,0 +1,41 @@
+
+   demonstration of equivalent syntaxes 
+  ======================================
+  void ctor of object #1
+    object #1 speaking
+  void ctor of object #2
+    object #2 speaking
+  dtor of object #2
+  void ctor of object #3
+  void ctor of object #4
+    object #3 speaking
+    object #4 speaking
+  void ctor of object #5
+    object #5 speaking
+  dtor of object #5
+  void ctor of object #6
+  void ctor of object #7
+    object #6 speaking
+    object #7 speaking
+  dtor of object #7
+  dtor of object #6
+  copy ctor of object #8
+    object #8 speaking
+  copy ctor of object #9
+    object #9 speaking
+  copy ctor of object #10
+  copy ctor of object #11
+    object #10 speaking
+    object #11 speaking
+  copy ctor of object #12
+    object #12 speaking
+  dtor of object #12
+  assignment operator
+  assignment operator
+  dtor of object #11
+  dtor of object #10
+  dtor of object #9
+  dtor of object #8
+  dtor of object #4
+  dtor of object #3
+  dtor of object #1

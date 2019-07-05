@@ -1,0 +1,46 @@
+
+1st executable statement of main
+  composed void constructor called
+
+2nd executable statement of main
+  composed copy constructor called
+
+3rd executable statement of main
+  composed operator= called
+
+4th executable statement of main
+  composed void constructor called
+  composed void constructor called
+  composer void constructor called
+
+5th executable statement of main
+  composed(int) constructor called
+    set data = 6
+  composed(int) constructor called
+    set data = 4
+  composer(int,int) constructor called
+    set in1 = 6
+    set in2 = 4
+
+6th executable statement of main
+  composed copy constructor called
+  composed copy constructor called
+  composer copy constructor called
+
+7th executable statement of main
+  composer operator= called
+  composed operator= called
+  composed operator= called
+
+no more executable statement of main
+  composer destructor called
+  composed destructor called
+  composed destructor called
+  composer destructor called
+  composed destructor called
+  composed destructor called
+  composer destructor called
+  composed destructor called
+  composed destructor called
+  composed destructor called
+  composed destructor called

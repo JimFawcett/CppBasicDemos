@@ -1,0 +1,40 @@
+
+1st executable statement of main
+  base void constructor called
+
+2nd executable statement of main
+  base copy constructor called
+
+3rd executable statement of main
+  base operator= called
+
+4th executable statement of main
+  base void constructor called
+  derived void constructor called
+
+5th executable statement of main
+  base copy constructor called
+  derived copy constructor called
+
+6th executable statement of main
+  derived operator= called
+  base operator= called
+
+7th executable statement of main
+  base copy constructor called
+  base to derived promotion constructor called
+  derived operator= called
+  base operator= called
+  derived destructor called
+  base destructor called
+
+8th executable statement of main
+  base operator= called
+
+no more executable statement of main
+  derived destructor called
+  base destructor called
+  derived destructor called
+  base destructor called
+  base destructor called
+  base destructor called
