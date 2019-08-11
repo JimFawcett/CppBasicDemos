@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeWalkDemo", "TreeWalkDemo\TreeWalkDemo.vcxproj", "{BCD5E65D-219F-459F-B7C1-5F065EDD2ACD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeOperations", "NodeOperations\NodeOperations.vcxproj", "{F8DE1232-961D-4184-91FF-F3FB44CFA66C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD5E65D-219F-459F-B7C1-5F065EDD2ACD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCD5E65D-219F-459F-B7C1-5F065EDD2ACD}.Debug|Win32.Build.0 = Debug|Win32
+		{BCD5E65D-219F-459F-B7C1-5F065EDD2ACD}.Release|Win32.ActiveCfg = Release|Win32
+		{BCD5E65D-219F-459F-B7C1-5F065EDD2ACD}.Release|Win32.Build.0 = Release|Win32
+		{F8DE1232-961D-4184-91FF-F3FB44CFA66C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8DE1232-961D-4184-91FF-F3FB44CFA66C}.Debug|Win32.Build.0 = Debug|Win32
+		{F8DE1232-961D-4184-91FF-F3FB44CFA66C}.Release|Win32.ActiveCfg = Release|Win32
+		{F8DE1232-961D-4184-91FF-F3FB44CFA66C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
