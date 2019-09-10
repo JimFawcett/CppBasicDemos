@@ -5,6 +5,9 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <iostream>
+#include <fstream>
+#include <sstream>
 
 void showSize(const std::string& typeName, size_t size, size_t fieldSize = 28)
 {
@@ -147,6 +150,24 @@ int main()
   std::unordered_map<std::string, std::string> unOrdMap{ {"one", "1" }, {"two", "2" }, {"three", "3" } };
   size_t unOrdMapSz = sizeof(unOrdMap);
   showSize("std::unordered_map<std::string, std::string> {...}", unOrdMapSz, 62);
+
+  size_t stdCoutSz = sizeof(std::cout);
+  showSize("std::cout", stdCoutSz, 62);
+
+  size_t stdStrBufSz = sizeof(std::streambuf);
+  showSize("std::streambuf", stdStrBufSz, 62);
+
+  size_t stdOFSSz = sizeof(std::ofstream);
+  showSize("std::ofstream", stdOFSSz, 62);
+
+  size_t stdFlBufSz = sizeof(std::filebuf);
+  showSize("std::filebuf", stdFlBufSz, 62);
+
+  size_t stdOSSSz = sizeof(std::ostringstream);
+  showSize("std::ostringstream", stdOSSSz, 62);
+
+  size_t stdSBufSz = sizeof(std::stringbuf);
+  showSize("std::stringbuf", stdSBufSz, 62);
 
   std::cout << "\n\n";
 }
