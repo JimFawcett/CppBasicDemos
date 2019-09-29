@@ -6,16 +6,20 @@
 #include <vector>
 #include <unordered_map>
 #include <iostream>
+//#include <iomanip>
 #include <fstream>
 #include <sstream>
+#include <memory>
 
 void showSize(const std::string& typeName, size_t size, size_t fieldSize = 28)
 {
-  std::cout << "\n  " << std::left << std::setw(fieldSize) << "sizeof(" + typeName + "): " << size;
+  long int save = std::cout.flags();
+  std::cout << "\n  " << std::left << std::setw(fieldSize) << "sizeof(" + typeName + "): " << std::right << std::setw(4) << size;
   if (size > 1)
     std::cout << " bytes";
   else
     std::cout << " byte";
+  std::cout.flags(save);
 }
 
 int main()
@@ -127,47 +131,55 @@ int main()
 
   std::cout << "\n\n  ---- selected library types ---------------------";
 
+  std::unique_ptr<int> upInt = std::make_unique<int>(2);
+  size_t upIntSz = sizeof(upInt);
+  showSize("std::unique_ptr<int> = \"std::make_unique<int>(2)\"", upIntSz, 68);
+
+  std::shared_ptr<double> spDbl = std::make_shared<double>(2.5);
+  size_t spDblSz = sizeof(spDbl);
+  showSize("std::shared_ptr<double> = \"std::make_shared<double>(2.5)\"", spDblSz, 68);
+
   std::string emptystr = "";
   size_t emptyStrSz = sizeof(emptystr);
-  showSize("std::string = \"\"", emptyStrSz, 62);
+  showSize("std::string = \"\"", emptyStrSz, 68);
 
   std::string str = "abc";
   size_t strSz = sizeof(str);
-  showSize("std::string = \"abc\"", strSz, 62);
+  showSize("std::string = \"abc\"", strSz, 68);
 
   std::vector<int> emptyVecInt;
   size_t emptyvecintSz = sizeof(std::vector<int>);
-  showSize("std::vector<int>", emptyvecintSz, 62);
+  showSize("std::vector<int>", emptyvecintSz, 68);
 
   std::vector<int> vecInt{ 1, 2, 3 };
   size_t vecintSz = sizeof(vecInt);
-  showSize("std::vector<int> { 1, 2, 3 }", vecintSz, 62);
+  showSize("std::vector<int> { 1, 2, 3 }", vecintSz, 68);
 
   std::unordered_map<std::string, std::string> emptyUnOrdMap;
   size_t emptyUnOrdMapSz = sizeof(emptyUnOrdMap);
-  showSize("std::unordered_map<std::string, std::string>", emptyUnOrdMapSz, 62);
+  showSize("std::unordered_map<std::string, std::string>", emptyUnOrdMapSz, 68);
 
   std::unordered_map<std::string, std::string> unOrdMap{ {"one", "1" }, {"two", "2" }, {"three", "3" } };
   size_t unOrdMapSz = sizeof(unOrdMap);
-  showSize("std::unordered_map<std::string, std::string> {...}", unOrdMapSz, 62);
+  showSize("std::unordered_map<std::string, std::string> {...}", unOrdMapSz, 68);
 
   size_t stdCoutSz = sizeof(std::cout);
-  showSize("std::cout", stdCoutSz, 62);
+  showSize("std::cout", stdCoutSz, 68);
 
   size_t stdStrBufSz = sizeof(std::streambuf);
-  showSize("std::streambuf", stdStrBufSz, 62);
+  showSize("std::streambuf", stdStrBufSz, 68);
 
   size_t stdOFSSz = sizeof(std::ofstream);
-  showSize("std::ofstream", stdOFSSz, 62);
+  showSize("std::ofstream", stdOFSSz, 68);
 
   size_t stdFlBufSz = sizeof(std::filebuf);
-  showSize("std::filebuf", stdFlBufSz, 62);
+  showSize("std::filebuf", stdFlBufSz, 68);
 
   size_t stdOSSSz = sizeof(std::ostringstream);
-  showSize("std::ostringstream", stdOSSSz, 62);
+  showSize("std::ostringstream", stdOSSSz, 68);
 
   size_t stdSBufSz = sizeof(std::stringbuf);
-  showSize("std::stringbuf", stdSBufSz, 62);
+  showSize("std::stringbuf", stdSBufSz, 68);
 
   std::cout << "\n\n";
 }
