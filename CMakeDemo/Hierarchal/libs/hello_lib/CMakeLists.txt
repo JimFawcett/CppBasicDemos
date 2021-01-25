@@ -3,7 +3,7 @@
 #---------------------------------------------------
 
 project(HelloCMakeLib)
-set(CMake_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 20)
 
 #---------------------------------------------------
 # build HelloCMakeLib.lib in folder build/debug

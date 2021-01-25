@@ -26,7 +26,7 @@ project(HelloCMake)
 #            -- ...
 #---------------------------------------------------
 
-set(CMake_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 20)
 
 #---------------------------------------------------
 # build HelloCMake.obj in folder build/HelloCMake.dir/debug
